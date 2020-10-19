@@ -20,10 +20,12 @@ app.listen(port, function () {
     console.log('Example app listening on port ' + port);
 });
 
+// a list of unwanted file extensions
 unwantedFileTypes = ['cfb', 'exe', 'dll', 'ACTION', 'APK', 'APP', 'BAT', 'BIN', 'CMD', 'COM', 'COMMAND', 'CPL', 'CSH', 'EXE', 'GADGET', 'INF1', 'INS', 'INX',
     'IPA', 'ISU', 'JOB', 'JSE', 'KSH', 'LNK', 'MSC', 'MSI', 'MSP', 'MST', 'OSX', 'OUT', 'PAF', 'PIF', 'PRG', 'PS1', 'REG', 'RGS', 'RUN', 'SCR', 'SCT', 'SHB',
     'SHS', 'U3P', 'VB', 'VBE', 'VBS', 'VBSCRIPT', 'WORKFLOW', 'WS', 'WSF', 'WSH']
 
+// post request to check what is the file in question extension and if its an exe retuen 'not_safe'
 app.post('/checkFile', function (req, res) {
     const url = "https://nodejs.org/dist/v12.19.0/node-v12.19.0-x64.msi";
 
