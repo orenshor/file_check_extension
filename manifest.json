@@ -1,0 +1,20 @@
+{
+  "name": "No EXE Extension",
+  "version": "1.0",
+  "description": "Prevent Downloading EXE files",
+  "permissions": [
+    "downloads",
+    "downloads.open",
+    "downloads.shelf",
+    "https://www.google.com/",
+    "<all_urls>",
+    "https://localhost/*"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "manifest_version": 2
+}
