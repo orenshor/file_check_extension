@@ -4,11 +4,7 @@
   "description": "Prevent Downloading EXE files",
   "permissions": [
     "downloads",
-    "downloads.open",
-    "downloads.shelf",
-    "https://www.google.com/",
-    "<all_urls>",
-    "https://localhost/*"
+    "<all_urls>"
   ],
   "background": {
     "scripts": [
